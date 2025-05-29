@@ -1,0 +1,103 @@
+#!/bin/bash
+# Filename: lang_gui_ger - coded in utf-8
+
+#                    Logfile Analysis
+#    Copyright (C) 2025 by toafez (Tommes) | MIT License
+
+
+# Globale Sprachvariablen
+# --------------------------------------------------------------
+btnCreateNow="Jetzt erstellen"
+btnDeleteNow="Jetzt löschen"
+btnStartSearching="Suche starten..."
+btnUnderstood="Verstanden"
+btnCancel="Abbrechen"
+btnBack="Zurück"
+btnSettings="Einstellungen"
+btnReset="Zurücksetzen"
+btnOpen="Öffnen"
+btnClose="Schließen"
+btnHistoryBack="<a href=\"javascript:history.back()\" class=\"btn btn-secondary btn-sm\">${btnBack}</a>"
+
+txt_link_help="Hilfe"
+txt_link_folder="Verzeichnis"
+txt_link_system_settings="Systemeinstellungen"
+txt_link_settings="Einstellungen"
+txt_refers_to="bezieht sich auf <span class=\"fw-bold\">/var/log</span> des Host-Systems"
+
+txtAlertSystemError="Systemfehler!"
+txtAlertInputError="Eingabefehler!"
+txtAlertInputConfirmation="Eingabebestätigung!"
+txtAlertProcessingError="Während der Verarbeitung ist ein Fehler ist aufgetreten! Bitte wiederhole den Vorgang."
+txtAlertAccessDenied_step1="Der Zugriff auf den Ordner"
+txtAlertAccessDenied_step2="wurde verweigert, da sich dieser außerhalb des Ordners <strong class=\"text-success\">/var/log</strong> befindet."
+txtAlertOnlyAdmin="Der Zugriff auf die Inhalte von LogAnalysis ist nur Benutzern aus der Gruppe der Administratoren gestattet."
+txt_update_available="Auf GitHub steht ein neues <span class=\"text-success fst-italic\">Update</span> zur Verfügung."
+txt_update_from="Bitte aktualisiere deine ${app_name} Version"
+txt_update_to="auf die Version"
+
+# Hilfe Ordnerstruktur
+# --------------------------------------------------------------
+txtDisplayFolderContent="Du bist hier..."
+txtHelp="Hilfe und Hinweise"
+txtHelpHeader="Zeichenerklärung"
+txtBtnReset="Suche zurücksetzen und Startseite anzeigen"
+txtFileOpen="Auf diese Datei kann lesend und schreibend zugegriffen werden"
+txtFolderWithContent="Dieses Verzeichnis enthält weitere lesbare Daten"
+txtFolderWithoutContent="Dieses Verzeichnis ist leer oder es ist kein Zugriff möglich"
+txtFileIsArchive="Auf dieses Archiv kann nicht zugegriffen werden"
+txtFileNoReadingRights="Auf diese Datei kann nicht zugegriffen werden"
+txtFileNoWritingRights="Auf diese Datei kann nur lesend zugegriffen werden"
+
+# Suchformular
+# --------------------------------------------------------------
+txtSearchForTerms="Durchsuche die Datei und finde Begriffe, ein Datum und/oder eine Uhrzeit"
+txtSearch="Durchsuche"
+txtSearchingFor="Suchbegriff eingeben..."
+txtCaseSensitive="Groß- und Kleinschreibung beachten"
+#txtDay="Tag"
+#txtMonth="Monat"
+#txtYear="Jahr"
+#txtHour="Stunde"
+#txtMinute="Minute"
+txtUseDate="Datumssuche"
+txtUseTime="Uhrzeit suche"
+
+# Ausgabe
+# --------------------------------------------------------------
+txtSearchResult="Suchergebnis"
+txtSearchResultFolder="LogAnalysis - Suchergebnis des Ordners"
+txtSearchResultFile="LogAnalysis - Suchergebnis der Datei"
+txtViewFile="LogAnalysis - Anzeigen des Dateiinhaltes"
+txtFolder="des Ordners"
+txtFile="der Datei"
+txtFileContent="Dateiinhalt"
+txtWithLineBreaks="Ausgabe beinhaltet Zeilenumbrüche"
+txtWhitoutLineBreaks="Ausgabe ohne Zeilenumbrüche"
+txtDeleteFileContent="Dateiinhalt löschen"
+txtNoMatches="Keine Treffer!"
+txtFileIsEmpty="Datei ist leer!"
+txtHitInLine="Treffer in Zeile"
+txtHitIn="Treffer in"
+txtLine="Zeile"
+txtAlertInputConfirmation="Eingabebestätigung!"
+txtAlertClearEntry="Soll der Dateiinhalt wirklich gelöscht werden?"
+
+# settings.sh
+# --------------------------------------------------------------
+txt_folder_title="Verzeichniseinstellungen"
+txt_folder_access="Ausblenden von Verzeichnissen, die leer sind oder auf die kein Zugriff möglich ist"
+txt_file_title="Dateieinstellungen"
+txt_file_access="Ausblenden von Dateien, bei denen es sich um ein Archiv handelt oder auf die kein Zugriff möglich ist"
+txt_folder_attributes="Speicherbelegung von Verzeichnissen anzeigen"
+txt_file_attributes="Speicherbelegung und Zeitpunkt der letzten Änderung einer Datei anzeigen"
+txt_debug_title="Debug-Modus - Optionen zur Fehleranalyse"
+txt_debug_mode_on="Debugging Konsole einschalten"
+txt_debug_mode_off="Debugging Konsole ausschalten"
+txt_debug_membership="Gruppenmitgliedschaft(en) der App"
+txt_debug_requests="GET & POST Anfragemethoden"
+txt_debug_get="GET Request Methode"
+txt_debug_post="POST Request Methode"
+txt_debug_global="Globale Umgebungsvariablen"
+
+
