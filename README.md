@@ -18,7 +18,7 @@ In sogenannten Protokoll- oder Logdateien (engl. logfiles) protokolliert jedes L
 
   **Beispiel:**
 
-  	  cp -r ~/Downloads/Docker_LogAnalysis-0.1-000/* /volume1/docker/loganalyis
+  	  cp -r ~/Downloads/Docker_LogAnalysis-0.1-100/* /volume1/docker/loganalyis
 
 - Wechsle nun in das Unterverzeichnis **loganalysis** deines Docker-Verzeichnisses und führe das "Dockerfile" mit Root-Rechten aus, um das Docker-Image zu erstellen. Verwende dafür den folgenden Befehl:
 
