@@ -1,3 +1,9 @@
+# Filename: Dockerfile - coded in utf-8
+
+#                LogAnalysis für Docker
+#    Copyright (C) 2025 by toafez (Tommes) | MIT License
+
+
 # Use the official Debian Stable Slim image as parent image
 # Then install the Apache2 package.
 FROM debian:stable-slim

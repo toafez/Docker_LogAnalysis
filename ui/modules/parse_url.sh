@@ -1,7 +1,7 @@
 #!/bin/bash
 # Filename: parse_url.sh - coded in utf-8
 
-#                    Logfile Analysis
+#                LogAnalysis für Docker
 #    Copyright (C) 2025 by toafez (Tommes) | MIT License
 
 
