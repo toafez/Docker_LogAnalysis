@@ -8,13 +8,15 @@ In sogenannten Protokoll- oder Logdateien (engl. logfiles) protokolliert jedes L
 - Wechsle zum GitHub-Repository **LogAnalysis *für Docker*** und klicke entweder auf **Releases** in der rechten Seitenleiste, um dir alle Versionen von LogAnalysis anzeigen zu lassen, oder klicke direkt darunter auf die **aktuellste Version**.
 - Wähle in der Tabelle direkt unter den Release Notes das Archiv mit dem Namen **Source Code (zip)** oder **Source Code (tar.gz)**, um die jeweilige Datei herunterzuladen. 
 - Nachdem das gewünschte Archiv heruntergeladen wurde, muss es mit einem geeigneten Programm entpackt werden, sofern das verwendete Betriebssystem über keine integrierte Funktion verfügt. Dabei ist darauf zu achten, dass das Archiv in einem neuen Unterverzeichnis entpackt wird, das den Namen der Archivdatei trägt.
-- Wechsel anschließend in das lokale Docker-Verzeichnis und erstelle dort ein neues Unterverzeichnis mit dem Namen **loganalysis**. Kopiere den Inhalt des zuvor enpackten Archives in dieses Unterverzeichnis.
+- Wechsel anschließend in das lokale Docker-Verzeichnis und erstelle dort ein neues Unterverzeichnis mit dem Namen **loganalysis**. 
 
-  **Beispiel:** Neues Unterverzeichnis erstellen
+  **Beispiel:**
 
   		mkdir -p /volume1/docker/loganalyis
 
-  **Beispiel:** Archivinhalt kopieren
+- Kopiere den Inhalt des zuvor enpackten Archives in dieses Unterverzeichnis.
+
+  **Beispiel:**
 
   		cp -r ~/Downloads/Docker_LogAnalysis-0.1-000/* /volume1/docker/loganalyis
 
