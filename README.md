@@ -1,4 +1,5 @@
 # LogAnalysis *für Docker* 
+### Docker WebGUI zum Betrachten und Durchsuchen von /var/log des Host-Systems
 In sogenannten Protokoll- oder Logdateien (engl. logfiles) protokolliert jedes Linux-System sämtliche Ereignisse, Probleme und Fehler des Systems sowie laufender Dienste. Diese Informationen werden in unterschiedlichen Textdateien abgelegt, die sich in der Regel im Ordner `/var/log` sowie in angeschlossenen Unterordnern befinden. Das Betrachten dieser Textdateien erfolgt normalerweise in einem beliebigen Editor, der über das Terminal ausgeführt wird. Mit **LogAnalysis *für Docker*** können diese Dateien über eine WebGUI komfortabel betrachtet und durchsucht werden.
 
 ## Wichtiger Hinweis
