@@ -37,7 +37,7 @@ In sogenannten Protokoll- oder Logdateien (engl. logfiles) protokolliert jedes L
 
       http://IP-ADRESSE:8080
 
-## Container Anzeigen, starten, stoppen und löschen
+## Container anzeigen, starten, stoppen und löschen
 **Hinweis 1:** Wenn man nicht als Systembenutzer **root** an der Kommandozeile angemeldet ist, muss jedem nachfolgenden Befehl `sudo` vorangestellt werden.
 
 **Hinweis 2:** In den nachfolgenden Beispielen müssen selbstverständlich die eigenen, ermittelten Angaben zur Container-ID **[CONTAINER ID]** bzw. Container-Name **[NAMES]** eingesetzt werden.
@@ -78,6 +78,33 @@ In sogenannten Protokoll- oder Logdateien (engl. logfiles) protokolliert jedes L
       sudo docker rm a6a7a3770ccc
 
   Ein Container sollte immer dann gelöscht werden, wenn er entweder nicht mehr benötigt wird, oder wenn eine neuere Build-Version des Containers verfügbar ist, um daraus ein neues Image, wie weiter oben beschrieben, zu erstellen und auszuführen.
+
+## Alle Images anzeigen um ein bestimmtes zu löschen
+**Hinweis 1:** Wenn man nicht als Systembenutzer **root** an der Kommandozeile angemeldet ist, muss jedem nachfolgenden Befehl `sudo` vorangestellt werden.
+
+**Hinweis 2:** In den nachfolgenden Beispielen müssen selbstverständlich die eigenen, ermittelten Angaben zur Image-ID **[IMAGE ID]** bzw. zum Namen des Repositorys **[REPOSITORY]**, gefolgt von dessen Tag **[TAG]** eingesetzt werden.
+
+- ### Alle Images anzeigen
+  Mit dem Befehl `docker images` werden **alle** auf dem System verfügbaren Images aufgelistet. Die nachfolgende Ausgabe wird dabei auf den LogAnalysis-Container **beschränkt**.
+
+      sudo docker images  
+      REPOSITORY   TAG     IMAGE ID      CREATED      SIZE
+      loganalysis  latest  90f848157f5e  7 hours ago  233MB
+
+- ### Image löschen
+  Ein Image kann mit dem Befehl `docker rmi` unter der Angabe der zuvor ermittelten Image-ID gelöscht werden. Dabei ist zu beachten, dass zuvor alle mit diesem Image verbundenen Container gestoppt wurden.
+
+  **Beispiel**
+
+      sudo docker rmi 90f848157f5e
+
+  Alternativ kann ein Image auch anhand des Repository-Namens und dessen Tags gelöscht werden.
+
+ **Beispiel**
+
+      sudo docker rmi loganalysis:latest
+
+  Nachdem das Image gelöscht wurde, kann bei Bedarf ein neues, aktuelleres Image erstellt werden. Die Vorgehensweise ist unter dem Punkt [Installationshinweise] (https://github.com/toafez/Docker_LogAnalysis#installationshinweise) beschrieben.
 
 ## Hilfe und Diskussion
 - Synology Forum:  
