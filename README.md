@@ -37,6 +37,48 @@ In sogenannten Protokoll- oder Logdateien (engl. logfiles) protokolliert jedes L
 
       http://IP-ADRESSE:8080
 
+## Anzeigen, starten, stoppen und löschen
+**Hinweis 1:** Wenn man nicht als Systembenutzer **root** an der Kommandozeile angemeldet ist, muss jedem nachfolgenden Befehl `sudo` vorangestellt werden.
+
+**Hinweis 2:** In den nachfolgenden Beispielen müssen selbstverständlich die eigenen, ermittelten Angaben zur Container-ID bzw. zum Container-Namen eingesetzt werden.
+
+- ### Laufende Container anzeigen
+  Mit dem Befehl docker ps werden **alle** aktuell ausgeführten Container aufgelistet. Die nachfolgende Ausgabe wird dabei auf den LogAnalysis-Container **beschränkt**.
+
+      sudo docker ps  
+      CONTAINER ID   IMAGE                                     COMMAND                    	  CREATED          STATUS                  PORTS                                                                                            NAMES
+      a6a7a3770ccc loganalysis "/usr/sbin/apache2ct…" 19 minutes ago Up 19 minutes           0.0.0.0:8080->80/tcp, :::8080->80/tcp LogAnalysis
+
+
+  Um sich alle vorhandenen Container anzeigen zu lassen, muss der Befehl `docker ps` um den Parameter `-a` (für all) ergänzt werden.
+
+      sudo docker ps -a 
+
+  Um einen Container zu einem späteren Zeitpunkt zu starten, zu stoppen oder zu löschen, ist vor allem die Container-ID oder der Container-Name wichtig.
+
+- ### Container starten
+  Ein Container kann mit dem Befehl `docker start` unter der Angabe der zuvor ermittelten Container-ID bzw. des Container-Namens gestartet werden.
+
+  **Beispiel**
+
+      sudo docker start a6a7a3770ccc
+
+- ### Container stoppen
+  Ein Container kann mit dem Befehl `docker stop` unter der Angabe der zuvor ermittelten Container-ID bzw. des Container-Namens angehalten bzw. gestoppt werden.
+
+  **Beispiel**
+
+      sudo docker stop a6a7a3770ccc
+
+- ### Container löschen
+  Ein Container kann mit dem Befehl `docker rm` unter der Angabe der zuvor ermittelten Container-ID bzw. des Container-Namens gelöscht werden. Dabei ist zu beachten, dass der Container zuvor gestoppt wurde.
+
+  **Beispiel**
+
+      sudo docker rm a6a7a3770ccc
+
+  Ein Container sollte immer dann gelöscht werden, wenn er entweder nicht mehr benötigt wird, oder wenn eine neuere Build-Version des Containers verfügbar ist, um daraus ein neues Image, wie weiter oben beschrieben, zu erstellen und auszuführen.
+
 ## Hilfe und Diskussion
 - Synology Forum:  
 [LogAnalysis - GUI zum betrachten und durchsuchen von /var/log](https://www.synology-forum.de/threads/loganalysis-gui-zum-betrachten-und-durchsuchen-von-var-log.107180/)
