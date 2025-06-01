@@ -43,7 +43,7 @@ In sogenannten Protokoll- oder Logdateien (engl. logfiles) protokolliert jedes L
 **Hinweis 2:** In den nachfolgenden Beispielen müssen selbstverständlich die eigenen, ermittelten Angaben zur Container-ID bzw. zum Container-Namen eingesetzt werden.
 
 - ### Laufende Container anzeigen
-  Mit dem Befehl docker ps werden **alle** aktuell ausgeführten Container aufgelistet. Die nachfolgende Ausgabe wird dabei auf den LogAnalysis-Container **beschränkt**.
+  Mit dem Befehl `docker ps` werden **alle** aktuell ausgeführten Container aufgelistet. Die nachfolgende Ausgabe wird dabei auf den LogAnalysis-Container **beschränkt**.
 
       sudo docker ps  
       CONTAINER ID   IMAGE                                     COMMAND                    	  CREATED          STATUS                  PORTS                                                                                            NAMES
