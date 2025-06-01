@@ -37,7 +37,7 @@ In sogenannten Protokoll- oder Logdateien (engl. logfiles) protokolliert jedes L
 
       http://IP-ADRESSE:8080
 
-## Anzeigen, starten, stoppen und löschen
+## Container Anzeigen, starten, stoppen und löschen
 **Hinweis 1:** Wenn man nicht als Systembenutzer **root** an der Kommandozeile angemeldet ist, muss jedem nachfolgenden Befehl `sudo` vorangestellt werden.
 
 **Hinweis 2:** In den nachfolgenden Beispielen müssen selbstverständlich die eigenen, ermittelten Angaben zur Container-ID bzw. zum Container-Namen eingesetzt werden.
