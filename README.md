@@ -104,7 +104,7 @@ In sogenannten Protokoll- oder Logdateien (engl. logfiles) protokolliert jedes L
 
       sudo docker rmi loganalysis:latest
 
-  Nachdem das Image gelöscht wurde, kann bei Bedarf ein neues, aktuelleres Image erstellt werden. Die Vorgehensweise ist unter dem Punkt [Installationshinweise] (https://github.com/toafez/Docker_LogAnalysis#installationshinweise) beschrieben.
+  Nachdem das Image gelöscht wurde, kann bei Bedarf ein neues, aktuelleres Image erstellt werden. Die Vorgehensweise ist unter dem Punkt [Installationshinweise] (README.md#installationshinweise) beschrieben.
 
 ## Hilfe und Diskussion
 - Synology Forum:  
@@ -122,5 +122,5 @@ In sogenannten Protokoll- oder Logdateien (engl. logfiles) protokolliert jedes L
 - [jQuery API](https://api.jquery.com/)
 
 ## Lizenz
-[MIT-License](LICENSE).
+- [MIT-License](LICENSE)
 
