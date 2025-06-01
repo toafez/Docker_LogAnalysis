@@ -100,7 +100,7 @@ In sogenannten Protokoll- oder Logdateien (engl. logfiles) protokolliert jedes L
 
   Alternativ kann ein Image auch anhand des Repository-Namens und dessen Tags gelöscht werden.
 
- **Beispiel**
+  **Beispiel**
 
       sudo docker rmi loganalysis:latest
 
