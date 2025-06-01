@@ -46,8 +46,8 @@ In sogenannten Protokoll- oder Logdateien (engl. logfiles) protokolliert jedes L
   Mit dem Befehl `docker ps` werden **alle** aktuell ausgeführten Container aufgelistet. Die nachfolgende Ausgabe wird dabei auf den LogAnalysis-Container **beschränkt**.
 
       sudo docker ps  
-      CONTAINER ID   IMAGE                                     COMMAND                    	  CREATED          STATUS                  PORTS                                                                                            NAMES
-      a6a7a3770ccc loganalysis "/usr/sbin/apache2ct…" 19 minutes ago Up 19 minutes           0.0.0.0:8080->80/tcp, :::8080->80/tcp LogAnalysis
+      CONTAINER ID  IMAGE        COMMAND                 CREATED         STATUS         PORTS                                  NAMES
+      a6a7a3770ccc  loganalysis  "/usr/sbin/apache2ct…"  19 minutes ago  Up 19 minutes  0.0.0.0:8080->80/tcp, :::8080->80/tcp  LogAnalysis
 
 
   Um sich alle vorhandenen Container anzeigen zu lassen, muss der Befehl `docker ps` um den Parameter `-a` (für all) ergänzt werden.
