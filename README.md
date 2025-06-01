@@ -40,7 +40,7 @@ In sogenannten Protokoll- oder Logdateien (engl. logfiles) protokolliert jedes L
 ## Container Anzeigen, starten, stoppen und löschen
 **Hinweis 1:** Wenn man nicht als Systembenutzer **root** an der Kommandozeile angemeldet ist, muss jedem nachfolgenden Befehl `sudo` vorangestellt werden.
 
-**Hinweis 2:** In den nachfolgenden Beispielen müssen selbstverständlich die eigenen, ermittelten Angaben zur Container-ID bzw. zum Container-Namen eingesetzt werden.
+**Hinweis 2:** In den nachfolgenden Beispielen müssen selbstverständlich die eigenen, ermittelten Angaben zur Container-ID **[CONTAINER ID]** bzw. Container-Name **[NAMES]** eingesetzt werden.
 
 - ### Laufende Container anzeigen
   Mit dem Befehl `docker ps` werden **alle** aktuell ausgeführten Container aufgelistet. Die nachfolgende Ausgabe wird dabei auf den LogAnalysis-Container **beschränkt**.
@@ -54,7 +54,7 @@ In sogenannten Protokoll- oder Logdateien (engl. logfiles) protokolliert jedes L
 
       sudo docker ps -a 
 
-  Um einen Container zu einem späteren Zeitpunkt zu starten, zu stoppen oder zu löschen, ist vor allem die **Container-ID [CONTAINER ID]** oder der **Container-Name [NAMES]** wichtig.
+  Um einen Container zu einem späteren Zeitpunkt zu starten, zu stoppen oder zu löschen, ist vor allem die Container-ID **[CONTAINER ID]** oder der Container-Name **[NAMES]** wichtig.
 
 - ### Container starten
   Ein Container kann mit dem Befehl `docker start` unter der Angabe der zuvor ermittelten Container-ID bzw. des Container-Namens gestartet werden.
