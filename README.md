@@ -54,7 +54,7 @@ In sogenannten Protokoll- oder Logdateien (engl. logfiles) protokolliert jedes L
 
       sudo docker ps -a 
 
-  Um einen Container zu einem späteren Zeitpunkt zu starten, zu stoppen oder zu löschen, ist vor allem die Container-ID oder der Container-Name wichtig.
+  Um einen Container zu einem späteren Zeitpunkt zu starten, zu stoppen oder zu löschen, ist vor allem die **Container-ID [CONTAINER ID]** oder der **Container-Name [NAMES]** wichtig.
 
 - ### Container starten
   Ein Container kann mit dem Befehl `docker start` unter der Angabe der zuvor ermittelten Container-ID bzw. des Container-Namens gestartet werden.
